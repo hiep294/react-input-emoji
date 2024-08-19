@@ -34,6 +34,8 @@ const EMOJI_PICKER_CONTAINER_HEIGHT = 435;
  * @property {HTMLDivElement=} buttonElement
  * @property {React.MutableRefObject=} buttonRef
  * @property {import('../types/types').Languages=} language
+ * @property {number} emojiSize
+ * @property {number} emojiButtonSize
  */
 
 // eslint-disable-next-line valid-jsdoc
@@ -49,7 +51,9 @@ const EmojiPickerWrapper = props => {
     appendContent,
     buttonElement,
     buttonRef,
-    language
+    language,
+    emojiButtonSize,
+    emojiSize,
   } = props;
 
   const [showPicker, setShowPicker] = useState(false);
@@ -167,6 +171,8 @@ const EmojiPickerWrapper = props => {
           customEmojis={customEmojis}
           position={emojiPickerPosition}
           language={language}
+          emojiButtonSize={emojiButtonSize}
+          emojiSize={emojiSize}
         />
         <EmojiPickerButton
           showPicker={showPicker}
@@ -187,6 +193,8 @@ const EmojiPickerWrapper = props => {
         customEmojis={customEmojis}
         position={emojiPickerPosition}
         language={language}
+        emojiButtonSize={emojiButtonSize}
+        emojiSize={emojiSize}
       />
       <EmojiPickerButton
         showPicker={showPicker}

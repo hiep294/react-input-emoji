@@ -25,8 +25,8 @@
     "test:watch": "jest --watch",
     "build": "tsc && rollup -c",
     "start": "rollup -c -w",
-    "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
+    "prepare": "npm run build",
+    "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
     "gen:types": "tsc"
   },

@@ -1,3 +1,7 @@
+em-emoji-picker {
+  width: 100%;
+}
+
 .react-input-emoji--container {
   color: #4b4b4b;
   text-rendering: optimizeLegibility;
@@ -125,7 +129,7 @@
   bottom: 0;
   right: 0;
   height: 435px;
-  width: 352px;
+  width: 100%;
   overflow: hidden;
   z-index: 10;
 }
@@ -133,7 +137,8 @@
 .react-emoji-picker {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  width: 100%;
   animation: slidein 0.1s ease-in-out;
 }
 

@@ -62,6 +62,8 @@ import { usePollute } from "./hooks/user-pollute";
  * @property {HTMLDivElement=} buttonElement
  * @property {React.MutableRefObject=} buttonRef
  * @property {boolean} shouldConvertEmojiToImage
+ * @property {number=} emojiSize
+ * @property {number=} emojiButtonSize
  */
 
 /**
@@ -103,6 +105,9 @@ function InputEmoji(props, ref) {
     background,
     placeholderColor,
     color,
+    // emoji
+    emojiButtonSize = 36, 
+    emojiSize = 28
   } = props;
 
   /** @type {React.MutableRefObject<import('./text-input').Ref | null>} */
@@ -344,6 +349,8 @@ function InputEmoji(props, ref) {
         buttonElement={buttonElement}
         buttonRef={buttonRef}
         language={language}
+        emojiButtonSize={emojiButtonSize}
+        emojiSize={emojiSize}
       />
     </div>
   );
