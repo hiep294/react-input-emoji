@@ -88,3 +88,8 @@ export default function Example() {
 ## License
 
 MIT © [cesarwbr](https://github.com/cesarwbr)
+
+## Bug
+1. `shouldReturn`: 
+* add emoji, then shift + enter => not break line
+* shift + enter => then add emoji => the emoji jumps to new line
